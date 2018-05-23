@@ -21,3 +21,12 @@ db.getCollection('candidates').aggregate([
    });
 })
 ```
+### Count distinct documents given an attribute
+```
+db.getCollection('candidates').distinct("emailAddress").length
+```
+
+### Show distintct documents given an attribute
+```
+db.getCollection('candidates').distinct("emailAddress")
+```
