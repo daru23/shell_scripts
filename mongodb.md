@@ -30,3 +30,7 @@ db.getCollection('candidates').distinct("emailAddress").length
 ```
 db.getCollection('candidates').distinct("emailAddress")
 ```
+### Add field to all documents in Collection
+```
+db.getCollection('candidates').update({},{$set : {"sendEmail": 0}},false,true)
+```
